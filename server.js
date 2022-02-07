@@ -1,5 +1,6 @@
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
+
 const app = express();
 
 app.set('port', process.env.PORT || 3000);
@@ -16,9 +17,11 @@ app.locals.pets = [
 
 // Create middleware functions here ------------------------------------->
 
+// 0. Add for every route the built-in module json (express.json())
+
 // 1. First middleware function (apply this function to all endpoints)
 // Log data about the request:
-// HTTP verb, endpoint, data in the request body, and anything else!
+// HTTP verb (req.method), endpoint (req.path), data in the request body (req.body), and anything else!
 
 
 

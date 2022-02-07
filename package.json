@@ -2,8 +2,12 @@
   "name": "express-middleware-exercise",
   "version": "1.0.0",
   "description": "",
+  "type":"module",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
+    "dev": "nodemon server.js",
+    "dev_sol": "nodemon server_solution.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
